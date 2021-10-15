@@ -13,7 +13,6 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.querySelector('.error');
 const name = document.getElementById('name');
-const email = document.getElementById('email');
 const msg = document.getElementById('msg');
 
 function lower(email) {
@@ -112,60 +111,6 @@ const projectCollection = {
     imageLink: '<div class="modalImage"><img class="noTenImg" src="images/tenBig.png" alt="Big Number 10"></div>',
     paragraph: 'Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak Kak',
   },
-};
-const popUpAppear = () => {
-  buttonOne.addEventListener('click', () => {
-    modal.classList.add('modal-appear');
-    document.querySelector('.modalHeading').innerHTML = projectCollection.project1.heading;
-    document.querySelector('.modalbadge.one').innerHTML = projectCollection.project1.tag1;
-    document.querySelector('.modalbadge.two').innerHTML = projectCollection.project1.tag2;
-    document.querySelector('.modalbadge.three').innerHTML = projectCollection.project1.tag3;
-    document.querySelector('.modalPara').innerHTML = projectCollection.project1.paragraph;
-  });
-  buttonTwo.addEventListener('click', () => {
-    modal.classList.add('modal-appear');
-    document.querySelector('.modalHeading').innerHTML = projectCollection.project2.heading;
-    document.querySelector('.modalbadge.one').innerHTML = projectCollection.project2.tag1;
-    document.querySelector('.modalbadge.two').innerHTML = projectCollection.project2.tag2;
-    document.querySelector('.modalbadge.three').innerHTML = projectCollection.project2.tag3;
-    document.querySelector('.modalPara').innerHTML = projectCollection.project2.paragraph;
-  });
-
-  buttonThree.addEventListener('click', () => {
-    modal.classList.add('modal-appear');
-    document.querySelector('.modalHeading').innerHTML = projectCollection.project3.heading;
-    document.querySelector('.modalbadge.one').innerHTML = projectCollection.project3.tag1;
-    document.querySelector('.modalbadge.two').innerHTML = projectCollection.project3.tag2;
-    document.querySelector('.modalbadge.three').innerHTML = projectCollection.project3.tag3;
-    document.querySelector('.modalPara').innerHTML = projectCollection.project3.paragraph;
-  });
-
-  buttonFour.addEventListener('click', () => {
-    modal.classList.add('modal-appear');
-    document.querySelector('.modalHeading').innerHTML = projectCollection.project4.heading;
-    document.querySelector('.modalbadge.one').innerHTML = projectCollection.project4.tag1;
-    document.querySelector('.modalbadge.two').innerHTML = projectCollection.project4.tag2;
-    document.querySelector('.modalbadge.three').innerHTML = projectCollection.project4.tag3;
-    document.querySelector('.modalPara').innerHTML = projectCollection.project4.paragraph;
-  });
-
-  buttonFive.addEventListener('click', () => {
-    modal.classList.add('modal-appear');
-    document.querySelector('.modalHeading').innerHTML = projectCollection.project5.heading;
-    document.querySelector('.modalbadge.one').innerHTML = projectCollection.project5.tag1;
-    document.querySelector('.modalbadge.two').innerHTML = projectCollection.project5.tag2;
-    document.querySelector('.modalbadge.three').innerHTML = projectCollection.project5.tag3;
-    document.querySelector('.modalPara').innerHTML = projectCollection.project5.paragraph;
-  });
-
-  buttonSix.addEventListener('click', () => {
-    modal.classList.add('modal-appear');
-    document.querySelector('.modalHeading').innerHTML = projectCollection.project6.heading;
-    document.querySelector('.modalbadge.one').innerHTML = projectCollection.project6.tag1;
-    document.querySelector('.modalbadge.two').innerHTML = projectCollection.project6.tag2;
-    document.querySelector('.modalbadge.three').innerHTML = projectCollection.project6.tag3;
-    document.querySelector('.modalPara').innerHTML = projectCollection.project6.paragraph;
-  });
 };
 
 const addData = (formName, formEmail, formMsg) => {
